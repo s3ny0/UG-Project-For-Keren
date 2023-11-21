@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>UG Computer Science Department</title>
+</head>
+<body>
+    <header>
+        <div class="title">
+            <div class="logo">
+                <h1>UG</h1>
+            </div>
+            <div class="name">
+                <h1>Department Of Computer Science</h1>
+            </div>
+        </div>
+        <div class="clock">
+            <h1 id="clock">12:00 PM</h1>
+            <script>
+                document.addEventListener("DOMContentLoaded", function() {
+                    let clockDisplay = document.getElementById('clock');
+
+                    function returnTime() {
+                        const timeElement = new Date(); //Get the time from the date object
+                        let hours = timeElement.getHours();
+                        let minutes = timeElement.getMinutes();
+
+                        let timePeriod = "AM"; //Default time period set to AM
+
+                        //Return the time in a 12 hour format
+                        if (hours > 12) {
+                            hours = hours - 12;
+                            timePeriod = "PM";
+                        }
+
+                        //Format minutes to add leading zeros
+                        if(minutes < 10) {
+                            minutes = "0"+ minutes;
+                        }
+
+                        //Update the clock display
+                        clockDisplay.innerText = `${hours}:${minutes} ${timePeriod}`;
+                    }
+
+                    returnTime(); //Call the return time function
+
+                    setInterval(returnTime, 1000);
+                })
+            </script>
+        </div>
+    </header>
+    <nav>
+        <button class="navButton">Home</button>
+        <button class="navButton">About</button>
+        <button class="navButton">Catalog</button>
+        <button class="navButton">Contact</button>
+        <button class="navButton">Events</button>
+        <button class="navButton">Resources</button>
+        <button class="navButton">Student Life</button>
+    </nav>
+    <section class="hero">
+        <div class="heroText">
+            <div class="subHeroText">
+                <p>
+                    We offer post graduate and undergraduate courses, 
+                    spanning a wide spectrum of proffessional endeavours.
+                </p>
+            </div>
+            <div class="mainHeroText">
+                <h1>
+                    Your Gateway To World Class Computer Science Education
+                </h1>
+                <button class="applyButton">Apply Now</button>
+            </div>
+        </div>
+        <img src="images/pexels-mati-mango-6330644.jpg" alt="A programmer behind a laptop screen typing some code" class="heroImg">
+    </section>
+
+    <hr class="divider">
+</body>
+</html>
