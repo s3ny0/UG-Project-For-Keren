@@ -1,3 +1,13 @@
+@media screen and (max-width: 500px){
+    .missionImg, .offerImg{
+        max-width: 98%;
+        max-height: 400px;
+    }
+    .whyComputerScience .text{
+        min-width: 100%;
+    }
+}
+
 body{
     margin: 0px;
     display: flex;
@@ -70,4 +80,34 @@ nav button{
     width: 500px;
     object-fit: cover;
     border-radius: 20px;
+}
+
+.offer{
+    width: 85%;
+    margin: 100px auto;
+    display: flex;
+    flex-wrap: wrap-reverse;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.offerText{
+    width: 500px;
+}
+
+.offerImg{
+    height: 600px;
+    width: 500px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+footer{
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+.socials{
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }

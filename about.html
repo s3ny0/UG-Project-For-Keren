@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="aboutStylesheet.css">
+    <!-- Include AOS library from CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <title>About Computer Science</title>
 </head>
 <body>
@@ -11,7 +14,7 @@
         <button class="goBack">Back</button>
         <button class="goToCatalog">Catalog</button>
     </nav>
-    <div class="whyComputerScience">
+    <div class="whyComputerScience" data-aos="zoom-in" data-aos-duration="2000">
         <h1 class="heading">WHY COMPUTER SCIENCE?</h1>
         <p class="text">
             Computer Science is a dynamic and rapidly evolving field at the intersection 
@@ -27,9 +30,9 @@
             digital world.
         </p>
     </div>
-    <img src="images/pexels-andrea-piacquadio-3769021.jpg" alt="a smiling woman sitting behind the laptop" class="aboutImg1" loading="lazy">
+    <img src="images/pexels-andrea-piacquadio-3769021.jpg" alt="a smiling woman sitting behind the laptop" class="aboutImg1" loading="lazy" data-aos="zoom-in" data-aos-duration="2000">
     <section class="mission">
-        <div class="missionText">
+        <div class="missionText" data-aos="zoom-in" data-aos-duration="2000">
             <h1 class="heading">OUR MISSION</h1>
             <p class="text">
                 Empowering Minds, Advancing Technology: The mission of our Computer Science Department  
@@ -41,7 +44,38 @@
                 and address societal challenges with creativity and integrity.
             </p>
         </div>
-        <img src="images/pexels-andrea-piacquadio-3768894.jpg" alt="a lady sitting in public smilimg at her computer screen" class="missionImg">
+        <img src="images/pexels-andrea-piacquadio-3768894.jpg" alt="a lady sitting in public smilimg at her computer screen" class="missionImg" data-aos="zoom-in" data-aos-duration="2000">
     </section>
+    <section class="offer">
+        <img src="images/pexels-alena-darmel-7750704.jpg" alt="students learning robotics" class="offerImg" data-aos="zoom-in" data-aos-duration="2000">
+        <div class="offerText" data-aos="zoom-in" data-aos-duration="2000">
+            <h1 class="heading">WHAT WE HAVE TO OFFER</h1>
+            <p class="text">
+                <strong> Courses</strong>
+                <br>
+                We offer short certification courses which are accessible to all. These courses are intensive 
+                and provide you with a fair knowledge about a given field. Be it programming or any I.T related discipline.
+                <br>
+                <br>
+                <strong>Undergraduate Programmes</strong>
+                <br>
+                The Department offers two undergraduate degree programmes, Bachelor of Science in Computer Science Single-Major 
+                (3:2:1:1) and Major-Minor (3:2:2:1) as well as Bachelor of Science in Information Technology.
+                <br>
+                <br>
+                <strong>MPhil and Msc Programmes</strong>
+                <br>
+                <br>
+                <strong>PhD Programmes</strong>
+            </p>
+        </div>
+    </section>
+    <footer>
+        <p class="socials">Instagram | Facebook | Youtube | Twitter</p>
+    </footer>
+
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
